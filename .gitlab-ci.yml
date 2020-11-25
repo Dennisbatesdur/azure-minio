@@ -1,5 +1,5 @@
 variables:
-    TUTOR_PLUGIN: minio
+    TUTOR_PLUGIN: minio-azure
     TUTOR_IMAGES: minio
     TUTOR_PYPI_PACKAGE: tutor-minio
     OPENEDX_RELEASE: juniper

@@ -9,7 +9,10 @@ HERE = os.path.abspath(os.path.dirname(__file__))
 config = {
     "set": {
         "OPENEDX_AWS_ACCESS_KEY": "openedx",
-        "OPENEDX_AWS_SECRET_ACCESS_KEY": "{{ MINIO_AWS_SECRET_ACCESS_KEY }}",
+        "OPENEDX_AWS_SECRET_ACCESS_KEY": "{{MINO_AWS_SECRET_ACCESSKEY}}",
+        "OPENEDX_AUZURE_ACCESS_KEY": "tutorstore"
+        "OPENEDX_AUZURE_SECRET_ACCESS_KEY": "sR86HvuUyY2MgxjPtlwgpCt5f73XdGVb19g256OTWJi1j2NuXWL/t1ycmaDwapvaAkqKOfGHc6hdSd7OuH+lbw=="
+
     },
     "add": {
         "AWS_SECRET_ACCESS_KEY": "{{ OPENEDX_AWS_SECRET_ACCESS_KEY|default('') or 24|random_string }}",
@@ -21,7 +24,7 @@ config = {
         "VIDEO_UPLOAD_BUCKET_NAME": "openedxvideos",
         "HOST": "minio.{{ LMS_HOST }}",
         "DOCKER_IMAGE": "{{ DOCKER_REGISTRY }}overhangio/minio:{{ MINIO_VERSION }}",
-        "GATEWAY": None,
+        "GATEWAY": azure,
     },
 }
 
