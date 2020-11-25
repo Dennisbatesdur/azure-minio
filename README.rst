@@ -1,17 +1,21 @@
 Object storage for Open edX with `MinIO <https://www.minio.io/>`_
 =================================================================
+This is a very alpha attempt at this bewarned
+
 
 This is a plugin for `Tutor <https://docs.tutor.overhang.io>`_ that provides S3-like object storage for Open edX platforms. It's S3, but without the dependency on AWS. This is achieved thanks to `MinIO <https://www.minio.io/>`_, an open source project that provides object storage with an API compatible with S3.
 
 In particular, this plugin is essential for `Kubernetes deployment <https://docs.tutor.overhang.io/k8s.html>`_.
+This fork will be for the use of AZURE as a storage medium for tutor with minimal changes to the minio toolbox
 
 Installation
 ------------
 
 The plugin is currently bundled with the `binary releases of Tutor <https://github.com/overhangio/tutor/releases>`_. If you have installed Tutor from source, you will have to install this plugin from source, too::
 
+Ignore for the moment 
     pip install tutor-minio
-
+IGNORE
 Then, to enable this plugin, run::
 
     tutor plugins enable minio
