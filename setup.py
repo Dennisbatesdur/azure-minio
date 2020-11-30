@@ -15,7 +15,7 @@ with io.open(
 
 
 setup(
-    name="tutor-minio",
+    name="tutor-minio-azure",
     version=about["__version__"],
     url="https://docs.tutor.overhang.io/",
     project_urls={
@@ -25,7 +25,7 @@ setup(
         "Community": "https://discuss.overhang.io",
     },
     license="AGPLv3",
-    author="Overhang.io",
+    author="Overhang.io, dcad.tech",
     author_email="admin@dcad.tech",
     description="A Tutor plugin for Azure object storage in MinIO",
     long_description=readme,

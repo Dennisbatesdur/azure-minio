@@ -12,6 +12,7 @@ config = {
         "OPENEDX_AWS_SECRET_ACCESS_KEY": "{{MINO_AWS_SECRET_ACCESSKEY}}",
         "OPENEDX_AUZURE_ACCESS_KEY": "tutorstore"
         "OPENEDX_AUZURE_SECRET_ACCESS_KEY": "sR86HvuUyY2MgxjPtlwgpCt5f73XdGVb19g256OTWJi1j2NuXWL/t1ycmaDwapvaAkqKOfGHc6hdSd7OuH+lbw=="
+        "OPENEDX_API":"s3v4"
 
     },
     "add": {
